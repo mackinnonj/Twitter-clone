@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome kit code must be added for icons to appear in project -->
+    <script src="https://kit.fontawesome.com/3adb0c09a6.js" crossorigin="anonymous"></script>
+
+    <title>Twitter Clone</title>
+</head>
+
+<!-- Notes: I have been coding alongside this tutorial https://www.youtube.com/watch?v=TSsPAOmTFsM 
+
+I am 17min into it and am considering changing some of the CSS because he uses a lot of px so maybe switch to rem to make it more dynamic-->
+
+<body>
+
+<!-- Sidebar Starts -->
+    <div class="sidebar">
+            <div class="sidebarOption">
+                <i class="fa-brands fa-twitter material-icons"></i>
+            </div>
+            <div class="sidebarOption active">
+                <i class="fa-solid fa-house material-icons"></i>
+                <h2>Home</h2>
+            </div>
+            <div class="sidebarOption">
+                <i class="fa-solid fa-magnifying-glass material-icons"></i>
+                <h2>Explore</h2>
+            </div>
+            <div class="sidebarOption">
+                <i class="fa-solid fa-bell material-icons"></i>
+                <h2>Notifications</h2>
+            </div>
+            <div class="sidebarOption">
+                <i class="fa-solid fa-envelope material-icons"></i>
+                <h2>Messages</h2>
+            </div>
+            <div class="sidebarOption">
+                <i class="fa-solid fa-user material-icons"></i>
+                <h2>Profile</h2>
+            </div>
+            <div class="sidebarOption">
+                <i class="fa-regular fa-circle material-icons"></i>
+                <h2>More</h2>
+            </div>
+            <button class="sidebar__tweet">Tweet</button>
+    </div>
+<!-- Sidebar ends -->
+
+<!-- feed starts -->
+<div class="feed">
+    <div class="feed__header">
+        <h2>Home</h2>
+    </div>
+
+
+    <!-- tweetbox starts -->
+    <div class="tweetBox">
+        <form>
+            <div class="tweetbox__input">
+                <img class="kittyPic" src="http://placekitten.com/250/250">
+                <input type="text" placeholder="What's happening?">
+            </div>
+            <button class="tweetBox__tweetButton">Tweet</button>
+        </form>
+    </div>
+    <!-- tweetbox ends -->
+
+
+    <!-- post starts -->
+    <div class="post">
+        <div class="post__avatar">
+            <img class="kittyPic" src="http://placekitten.com/250/250">
+        </div>
+        <div class="post__body">
+            <div class="post__header">
+                <div class="post__headerText">
+                    <h3>Joshua MacKinnon
+                        <span class="post__headerSpecial">
+                            <span class="material-icons post__badge"> 
+                                <i class="fa-solid fa-certificate"></i>
+                            </span>@jmackinnnon1992
+                        </span>
+                    </h3>
+                </div>
+                <div class="post__headerDescription">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem doloremque incidunt nostrum a reiciendis obcaecati soluta quos eius quis!</p>
+                </div>
+            </div>
+
+            <img src= "https://unsplash.it/600/400" />
+            <div class="post__footer">
+                <i class="fa-solid fa-comment material-icons"></i>
+                <i class="fa-solid fa-repeat material-icons"></i>
+                <i class="fa-solid fa-heart material-icons"></i>
+                <i class="fa-solid fa-arrow-up-from-bracket material-icons"></i>
+                <i class="fa-solid fa-triangle material-icons"></i>
+            </div>
+        </div>
+    </div>
+    <!-- post ends -->
+
+        <!-- post starts -->
+        <div class="post">
+            <div class="post__avatar">
+                <img class="kittyPic" src="http://placekitten.com/250/250">
+            </div>
+            <div class="post__body">
+                <div class="post__header">
+                    <div class="post__headerText">
+                        <h3>Joshua MacKinnon
+                            <span class="post__headerSpecial">
+                                <span class="material-icons post__badge"> 
+                                    <i class="fa-solid fa-certificate"></i>
+                                </span>@jmackinnnon1992
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="post__headerDescription">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem doloremque incidunt nostrum a reiciendis obcaecati soluta quos eius quis!</p>
+                    </div>
+                </div>
+    
+                <img src= "https://unsplash.it/600/400" />
+                <div class="post__footer">
+                    <i class="fa-solid fa-comment material-icons"></i>
+                    <i class="fa-solid fa-repeat material-icons"></i>
+                    <i class="fa-solid fa-heart material-icons"></i>
+                    <i class="fa-solid fa-arrow-up-from-bracket material-icons"></i>
+                    <i class="fa-solid fa-triangle material-icons"></i>
+                </div>
+            </div>
+        </div>
+        <!-- post ends -->
+    </div>
+<!-- feed ends -->
+
+        <!-- widgets starts -->
+        <div class="widgets">
+            <div class="widgets__input">
+                <i class="fa-solid fa-magnifying-glass material-icons widgets__searchIcon"></i>
+                <input type="text" placeholder="search Twitter">
+            </div>
+            <div class="widgets__widgetContainer">
+                <h2>What's happening?</h2>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        <!-- widgets ends -->  
+</body>
+</html>
